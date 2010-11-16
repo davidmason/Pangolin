@@ -1,0 +1,39 @@
+<project name="pangolin" default="build" basedir=".">
+	<description>Basic build file for the Pangolin web application</description>
+	
+	<property environment="env"/>
+	
+	<!-- Note: tomcatHome must be set to an appropriate value for your system
+               so that the servlet api is accessible to the compiler -->
+	<property name="tomcatHome" location="${env.CATALINA_HOME}"/>
+	<property name="deployHome" location="./deploy"/>
+	<property name="sourceHome" location="./pangolin/src/pangolin"/>
+	
+	<target name="prepare">
+		<mkdir dir="${deployHome}"/>
+		<mkdir dir="${deployHome}/WEB-INF"/>
+		<mkdir dir="${deployHome}/WEB-INF/classes"/>
+		<mkdir dir="${deployHome}/WEB-INF/lib"/>
+	</target>
+
+	<target name="build" depends="prepare">
+		<javac srcdir="${sourceHome}" destdir="${deployHome}/WEB-INF/classes" includeantruntime="false"
+			   classpath="${tomcatHome}/lib/servlet-api.jar;./pangolin/WebContent/WEB-INF/lib/segmentation.jar;./pangolin/WebContent/WEB-INF/lib/cos.jar;./pangolin/WebContent/WEB-INF/lib/httpcore-4.0.1.jar;./pangolin/WebContent/WEB-INF/lib/httpclient-4.0.3.jar;./pangolin/WebContent/WEB-INF/lib/jaxrs-api-1.2.1.GA.jar">
+		</javac>
+		
+		<copy todir="${deployHome}">
+			<fileset dir="./pangolin/WebContent"/>
+		</copy>
+		<copy todir="${deployHome}/WEB-INF/classes">
+			<fileset dir= "${sourceHome}/i18n" >
+				<include name="*.properties"/>
+			</fileset>
+		</copy>
+		<jar destfile="./pangolin.war" basedir="${deployHome}"/>
+	</target>
+	
+	<target name="cleanup">
+		<delete dir="${deployHome}"/>
+	</target>
+	
+</project>

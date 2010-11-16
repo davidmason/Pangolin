@@ -1,0 +1,253 @@
+body {
+	margin:0px;
+	padding: 0px;
+	}
+
+h1 {
+	float: left;
+	background-color:#ccaa55;
+	padding:30px;
+	font-family:palatino, sans-serif;
+	font-size:2.5em;
+	margin:0px;
+	width:100%;
+	}
+
+table {
+	/* border: 1px solid black; */
+	border-collapse:collapse;
+	}
+
+.button {
+	margin: 5px;
+	padding: 7px;
+	color:#443322;
+	font-weight:bold;
+	background-color:#ccaa55;
+	border: 2px solid #886633;
+	text-decoration: none;
+	}
+
+.back-button {
+	/*display:inline;*/
+	margin-left:20px;
+	margin-top:20px;
+	float:left;
+	}
+
+/* chooseFile.jsp */
+#error-box {
+	border:2px solid #cc0000;
+	background-color:#ffdddd;
+	padding: 15px;
+	margin:20px;
+	float:left;
+	font-weight:bold;
+	}
+
+#load-options {
+	padding: 15px;
+	margin: 20px;
+	float: left;
+	clear: left;
+	background-color: #886633;
+	}
+
+.load-option {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #ffffff;
+	border: 3px solid #ccaa55;
+	}
+	
+.load-option p {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#repository-documents {
+	padding: 20px;
+	margin: 20px;
+	float: left;
+	background-color: #ffffff;
+	border: 3px solid gray;
+	}
+	
+#repo-docs-table {
+	margin: 15px;
+	border: none;
+	}
+#repo-docs-table th, #repo-docs-table td {
+	border: none;
+	background-color: #ffffff;
+	padding: 5px;
+	}
+
+
+
+/* editor.jsp */
+
+#doc-management {
+	padding: 10px;
+	margin: 20px;
+	float: right;
+	background-color: #eeeecc;
+	}
+#doc-management a {
+	display: block;
+	float: right;
+	width:275px;
+	}
+
+.filename {
+	font-size: 2.0em;
+	}
+
+#editor {
+	float:left;
+	margin:30px;
+	background-color:#eeeecc;
+	}
+
+#rules-selection {
+	float: left;
+	clear: left;
+	background-color: #eeeecc;
+	margin: 5px;
+	padding: 5px;
+	}
+#rules-selection a {
+	width: 120px;
+	/* display: inline; */
+	}
+
+#rules-form {}
+#rules-table {
+	float: left;
+	clear: left;
+	width: 700px;
+	}
+#rules-table table {
+	width: 680px;
+	border: 1px solid black;
+	border-collapse:collapse;
+	}
+#rules-table thead {}
+#rules-table tr {}
+#rules-table th, #rules-table td {
+	border: 1px solid black;
+	padding: 5px;
+	max-width: 400px;
+	word-wrap: break-word;
+	background-color: #ffffff;
+	/* overflow: auto; */
+	}
+#rules-table th	{
+	background-color:#ccaa55;
+	color:white;
+	}
+#rules-table tfoot {}
+#rules-table tbody {}
+
+#rules-control {
+	float: left;
+	clear: none;
+	background-color: #eeeecc;
+	padding-right: 15px;
+	}
+#rules-control input {
+	display: block;
+	width: 80px;
+	}
+
+
+#sample-segmentation {
+	float: left;
+	clear: left;
+	padding: 20px;
+	padding-left:40px;
+	background-color: #eeeecc;
+}
+#sample-segmentation h2 {
+	
+	}
+	
+.sample-text {
+	height: 125px;
+	width: 700px;
+	}
+#sample-text-plain {}
+#sample-text-segmented {}
+
+
+/* ruleEditor.jsp */
+#rule-details {
+	background-color: #eeeecc;
+	float: left;
+	clear: left;
+	padding: 20px;
+	margin: 20px;
+	}
+	
+	
+	
+#repository-rules {
+	padding: 20px;
+	margin: 20px;
+	float: left;
+	background-color: #ffffff;
+	border: 3px solid gray;
+	}
+	
+#repo-rules-table {
+	margin: 15px;
+	border: none;
+	}
+#repo-rules-table th, #repo-rules-table td {
+	border: none;
+	background-color: #ffffff;
+	padding: 5px;
+	}
+
+/*	
+#repository-rules {
+	background-color: #ffdddd;
+	float: left;
+	padding: 20px;
+	margin: 20px;
+	}
+#repo-rules-table {}
+#repo-rules-table th {
+	border: 1px solid black;
+	}
+#repo-rules-table td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: none;
+	}
+*/
+
+/* groupsEditor.jsp */
+#working-rule-cell {
+	background-color: #ddffdd;
+}
+
+#groups-box {
+	background-color: #eeeecc;
+	float: left;
+	clear: left;
+	padding: 20px;
+	margin: 20px;
+	}
+
+#maps-box {
+	background-color: #eeeecc;
+	float: left;
+	padding: 20px;
+	margin: 20px;
+	}
+
+.url-box {
+	width: 300px;
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>Pangolin</display-name>
+  <welcome-file-list>
+    <welcome-file>chooseFile.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.LoadSRXDoc</servlet-class>
+    <servlet-name>LoadSRXDoc</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadSRXDoc</servlet-name>
+    <url-pattern>/LoadSRXDoc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.EditRules</servlet-class>
+    <servlet-name>EditRules</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditRules</servlet-name>
+    <url-pattern>/EditRule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.SaveSRXDoc</servlet-class>
+    <servlet-name>SaveSRXDoc</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveSRXDoc</servlet-name>
+    <url-pattern>/SaveSRXDoc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.EditGroups</servlet-class>
+    <servlet-name>EditGroups</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditGroups</servlet-name>
+    <url-pattern>/EditGroups</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.WebTest</servlet-class>
+    <servlet-name>WebTest</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebTest</servlet-name>
+    <url-pattern>/WebTest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.UpdateSample</servlet-class>
+    <servlet-name>UpdateSample</servlet-name></servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSample</servlet-name>
+    <url-pattern>/UpdateSample</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-class>pangolin.servlet.UploadSRXDoc</servlet-class>
+    <servlet-name>UploadSRXDoc</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadSRXDoc</servlet-name>
+    <url-pattern>/UploadSRXDoc</url-pattern>
+  </servlet-mapping>
+  	
+  <servlet>
+    <servlet-class>pangolin.servlet.SetDocName</servlet-class>
+    <servlet-name>SetDocName</servlet-name>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetDocName</servlet-name>
+    <url-pattern>/SetDocName</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-class>pangolin.servlet.UpdateMaskRule</servlet-class>
+    <servlet-name>UpdateMaskRule</servlet-name></servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateMaskRule</servlet-name>
+    <url-pattern>/UpdateMaskRule</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
