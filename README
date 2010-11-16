@@ -1,1 +1,9 @@
-This is a test of readme
+Pangolin SRX web editor
+
+This is an early implementation of a web-based SRX editor application based on
+libraries from the Okapi Framework (http://okapi.opentag.com/). The application
+is modeled after Ratel (http://okapi.opentag.com/applications.html#Ratel), with
+extensions to load and save documents from a number of sources.
+
+More information on the SRX document format and purpose can be found through the
+Okapi website: http://okapi.opentag.com/standards.html#srx
