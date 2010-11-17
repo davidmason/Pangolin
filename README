@@ -1,5 +1,7 @@
 Pangolin SRX web editor
 
+(proposed rename to Ground Pangolin as there are several projects named Pangolin)
+
 This is an early implementation of a web-based SRX editor application based on
 libraries from the Okapi Framework (http://okapi.opentag.com/). The application
 is modeled after Ratel (http://okapi.opentag.com/applications.html#Ratel), with
