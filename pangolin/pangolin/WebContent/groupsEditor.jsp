@@ -1,6 +1,6 @@
-<% String pageTitleKey = "group_editor_title"; %>
+<% String pageTitleKey = "group_editor_title";
+   Boolean pageRequiresDoc = true; %>
 <%@ include file="/includes/header.jsp" %>
-<%@ include file="/includes/loadSRX.jsp" %>
 
 <a class="button back-button" href="editor.jsp"><%= uiStrings.getString("return_to_editor") %></a>
 

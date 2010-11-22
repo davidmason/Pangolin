@@ -1,14 +1,15 @@
-<% String pageTitleKey = "main_window_title"; %>
+<% String pageTitleKey = "main_window_title";
+   Boolean pageRequiresDoc = true; %>
 <%@ include file="/includes/header.jsp" %>
-<%@ include file="/includes/loadSRX.jsp" %>
 
-<!-- imports for internationalization -->
+<% /*imports for internationalization*/ %>
 <%@ page import="java.util.LinkedHashMap" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="net.sf.okapi.common.resource.*" %>
 <%@ page import="static pangolin.util.TextUtils.*" %>
 
 
+<% if (false) { %>
 <div id="doc-management">
   <p class="filename"><%= (fileName == null) ? uiStrings.getString("untitled_doc") : fileName %></p>
   <a class="button" href="SaveSRXDoc"><%= uiStrings.getString("save_document") %></a><br/>
@@ -20,6 +21,8 @@
     <input type="text" name="new-doc-name" /> <input type="submit" value="<%= uiStrings.getString("change_doc_name") %>" />
   </form>
 </div>
+
+<% } %>
 
 <div id="editor">
  <div id="rules-selection">
@@ -65,9 +68,7 @@
      <input type="submit" name="remove-rule" value="<%= uiStrings.getString("button_remove_rule") %>" />
      <input type="submit" name="move-rule-up" value="<%= uiStrings.getString("button_move_rule_up") %>" />
      <input type="submit" name="move-rule-down" value="<%= uiStrings.getString("button_move_rule_down") %>" />
-     
-     <!-- This function does not appear possible without client-side processing
-     <input type="submit" name="char-info" value="%= uiStrings.getString("button_char_info") %>" /> -->
+     <% /*the char-info function does not appear possible without client-side processing*/ %>
    </div>
  </form>
  

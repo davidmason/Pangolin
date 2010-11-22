@@ -1,16 +1,22 @@
 body {
 	margin:0px;
 	padding: 0px;
+	background-color:#eeeecc;
 	}
+
+#title {
+	float: left;
+	background-color:#ccaa55;
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+}
 
 h1 {
 	float: left;
-	background-color:#ccaa55;
 	padding:30px;
 	font-family:palatino, sans-serif;
 	font-size:2.5em;
-	margin:0px;
-	width:100%;
 	}
 
 table {
@@ -19,13 +25,14 @@ table {
 	}
 
 .button {
-	margin: 5px;
-	padding: 7px;
+	margin: 4px;
+	padding: 5px;
 	color:#443322;
 	font-weight:bold;
 	background-color:#ccaa55;
-	border: 2px solid #886633;
+	border: 1px solid #886633;
 	text-decoration: none;
+	font-size: 0.7em;
 	}
 
 .back-button {
@@ -89,15 +96,48 @@ table {
 
 #doc-management {
 	padding: 10px;
-	margin: 20px;
 	float: right;
-	background-color: #eeeecc;
+	margin: 0;
+	/*background-color: #eeeecc;
+	width: 400px;*/
 	}
-#doc-management a {
+
+#doc-name {
+    float: left;
+}
+
+#doc-name p {
+    /*display: inline;*/
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	margin-left: 0;
+}
+
+#doc-name input {
+    float: left;
+	clear: left;
+}
+
+#doc-controls {
+    float: left;
+	margin-left: 15px;
+}
+
+#doc-controls a {
 	display: block;
-	float: right;
-	width:275px;
-	}
+	float: left;
+	clear: left;
+	font-weight:bold;
+	text-decoration: none;
+	font-size: 0.7em;
+	/*width: 95%;*/
+	padding: 5px;
+}
+
+#doc-controls a:link, #doc-controls a:visited {color:#443322;}
+#doc-controls a:hover, #doc-controls a:active {color:#FF0000;}
+
 
 .filename {
 	font-size: 2.0em;
@@ -105,17 +145,26 @@ table {
 
 #editor {
 	float:left;
-	margin:30px;
+	margin:0px;
+	width: 100%;
 	background-color:#eeeecc;
+	padding-top: 15px;
+	padding-left: 20px;
 	}
 
 #rules-selection {
 	float: left;
 	clear: left;
 	background-color: #eeeecc;
-	margin: 5px;
-	padding: 5px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding: 0px;
 	}
+#rules-selection p {
+	margin: 0px;
+	padding: 0px;
+}
 #rules-selection a {
 	width: 120px;
 	/* display: inline; */
@@ -153,7 +202,7 @@ table {
 	float: left;
 	clear: none;
 	background-color: #eeeecc;
-	padding-right: 15px;
+	/*padding-right: 15px;*/
 	}
 #rules-control input {
 	display: block;
@@ -164,8 +213,10 @@ table {
 #sample-segmentation {
 	float: left;
 	clear: left;
-	padding: 20px;
-	padding-left:40px;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	background-color: #eeeecc;
 }
 #sample-segmentation h2 {
@@ -181,18 +232,30 @@ table {
 
 
 /* ruleEditor.jsp */
+
+#repo-buttons {
+    float: right;
+}
+#repo-buttons input {
+    float: right;
+	clear: right;
+	white-space: normal;
+	width: 120px;
+}
+
 #rule-details {
 	background-color: #eeeecc;
 	float: left;
 	clear: left;
 	padding: 20px;
-	margin: 20px;
+	margin: 0;
+	width: 450px;
 	}
 	
 	
 	
 #repository-rules {
-	padding: 20px;
+	padding: 10px;
 	margin: 20px;
 	float: left;
 	background-color: #ffffff;
